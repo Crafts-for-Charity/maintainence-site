@@ -12,24 +12,64 @@
 </head>
 
 <style>
+	/* comfortaa-latin-wght-normal */
+	@font-face {
+		font-family: 'Comfortaa Variable';
+		font-style: normal;
+		font-display: swap;
+		font-weight: 300 700;
+		src: url(fonts/comfortaa/webfonts/comfortaa-latin-700-normal.woff2) format('woff2-variations');
+		unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+	}
+
+	/* maven-pro-latin-wght-normal */
+	@font-face {
+	  font-family: 'Maven Pro Variable';
+	  font-style: normal;
+	  font-display: swap;
+	  font-weight: 400 900;
+	  src: url(fonts/maven/webfonts/maven-pro-latin-400-normal.woff2) format('woff2-variations');
+	  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+	}
+
 	.content {
-	  max-width: 32rem;
-	  margin: auto;
+		max-width: 32rem;
+		margin: auto;
+	}
+
+	.dark_blue {
+		color: #454F99;
+	}
+
+	.light_blue {
+		color: #6DBFEB;
+	}
+
+	.dark_grey {
+		color: #454649;
+	}
+
+	.comfortaa {
+		font-family: "Comfortaa Variable";
+	}
+
+	.maven {
+		font-family: "Maven Pro Variable";
 	}
 </style>
 
 <body>
-	<div class="content">
-		<h1>Welcome to Crafts for Charity</h1>
+	<div class="content comfortaa">
+		<h1 class="light_blue">Welcome to Crafts for Charity</h1>
 		<img src="images/banner.gif" width="500">
 
-		<p>
+		<p class="maven dark_grey">
 		Crafts for Charity's mission is to create enjoyable opportunities for those who want to volunteer
 		creatively to help their community. We do this by providing free virtual craft classes that teach the skills
 		needed to donate crafts.
 		</p>
 
-		<h2>Our site is undergoing maintainence! Check back soon!</h2>
+		<h2 class="dark_blue">Our site is undergoing maintainence! Check back soon!</h2>
 	</div>
 </body>
 
